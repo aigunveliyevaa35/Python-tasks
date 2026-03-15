@@ -1,0 +1,5 @@
+egg=float(input("enter the price of egg:"))
+milk=float(input("enter the price of milk:"))
+flour=float(input("enter the price of flour:"))
+total=egg+milk+flour
+print("total:",total)
