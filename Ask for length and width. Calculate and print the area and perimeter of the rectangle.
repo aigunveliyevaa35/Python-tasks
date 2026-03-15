@@ -1,0 +1,6 @@
+length = float(input("Uzunluğu daxil edin: "))
+width = float(input("Eni daxil edin: "))
+area = length * width
+perimeter = 2 * (length + width)
+print("Sahə:", area)
+print("Perimetr:", perimeter)
