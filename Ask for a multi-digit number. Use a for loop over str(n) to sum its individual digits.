@@ -1,0 +1,5 @@
+number=input("Enter the multi-digit number:")
+s=0
+for i in str(number):
+    s+=int(i)
+print(s)
