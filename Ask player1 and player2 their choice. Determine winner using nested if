@@ -1,0 +1,11 @@
+amount=float(input("Enter the amount:"))
+is_member=input("Are you member? (yes/no):")
+if amount>100:
+    shipping=0
+    print("Shipping is free")
+else:
+    if is_member=="he":
+        shipping=3
+    else:
+        shipping=7
+print(f"Total: ${amount + shipping}")
