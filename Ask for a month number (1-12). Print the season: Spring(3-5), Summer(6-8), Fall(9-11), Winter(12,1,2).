@@ -1,0 +1,11 @@
+month_number=int(input("Enter the month number(1-12):"))
+if 3<=month_number<=5:
+    print("Season:Spring")
+elif 6<=month_number<8:
+    print("Season:Summer")
+elif 9<=month_number<=11:
+    print("Season:Fall")
+elif month_number==12 or month_number==1 or month_number==2:
+    print("Season:Winter")
+else:
+    print("You have to enter the number between(1-12!")
