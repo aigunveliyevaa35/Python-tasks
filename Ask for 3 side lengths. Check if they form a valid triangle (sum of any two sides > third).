@@ -1,0 +1,14 @@
+a=float(input("Enter the first side of triangle:"))
+b=float(input("Enter the second side of triangle:"))
+c=float(input("Enter the third side of triangle:"))
+if a+b>c:
+    if b+c>a:
+        if a+c>b:
+            print("Valid Triangle")
+        else:
+            print("Invalid Triangle")
+    else:
+        print("Invalid Triangle")
+else:
+    print("Invalid Triangle")
+    
