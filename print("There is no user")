@@ -1,0 +1,11 @@
+stored_user=input()
+stored_pass=input()
+user_input=input()
+pass_input=input()
+if stored_user==user_input:
+    if stored_pass==pass_input:
+        print("Access Granted")
+    else:
+        print("Wrong password")
+else:
+    print("There is no user")
