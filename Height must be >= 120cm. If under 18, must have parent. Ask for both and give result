@@ -1,0 +1,9 @@
+height=float(input())
+age=int(input())
+if height>=120:
+    if age<18:
+        print("must have parent")
+    else:
+        print("mustn't have parent")
+else:
+    print("Height must be>=120cm.")
