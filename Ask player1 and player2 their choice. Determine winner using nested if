@@ -1,11 +1,23 @@
-amount=float(input("Enter the amount:"))
-is_member=input("Are you member? (yes/no):")
-if amount>100:
-    shipping=0
-    print("Shipping is free")
+player1=input("player1(rock,paper,scissors):")
+player2=input("player2(rock,paper,scissors):")
+if player1==player2:
+    print("Draw!")
 else:
-    if is_member=="he":
-        shipping=3
+    if p1=="rock":
+        if p2=="scissors":
+            print("winner is player1")
+        else:
+            print("winner is player2")
+elif player1 == "paper":
+        if player2 == "rock":
+            print("Winner is player1")
+        else:
+            print("Winner is player2")
+elif player1 == "scissors":
+        if player2 == "paper":
+            print("Winner is player1")
+        else:
+            print("Winner is player2")
     else:
-        shipping=7
-print(f"Total: ${amount + shipping}")
+        print("wrong choice!")
+            
