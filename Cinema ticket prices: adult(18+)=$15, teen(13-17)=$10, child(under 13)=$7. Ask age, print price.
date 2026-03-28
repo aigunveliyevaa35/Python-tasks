@@ -1,0 +1,7 @@
+user_age=int(input())
+if user_age>=18:
+    print("Adult:15$")
+elif 13<=user_age<=17:
+    print("Teen:10$")
+else:
+    print("Child:7$")
