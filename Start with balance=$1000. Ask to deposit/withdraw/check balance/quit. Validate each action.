@@ -1,0 +1,38 @@
+balance = 1000
+
+while True:
+    print("\n--- BANK MENU ---")
+    print("1. Check your balance")
+    print("2. Enter amount (Deposit)")
+    print("3. Spend money (Withdraw)")
+    print("4. Exit (Quit)")
+    
+    choice = input("Make your choice (1-4): ")
+
+    if choice == "1":
+        print(f"Your current balance: ${balance}")
+    
+    elif choice == "2":
+        amount = float(input("The amount you want to increase: "))
+        if amount > 0:
+            balance += amount
+            print(f"${amount} added to balance. New balance: ${balance}")
+        else:
+            print("Error: The amount must be a positive number!")
+            
+    elif choice == "3":
+        amount = float(input("The amount you want to withdraw: "))
+        if amount > balance:
+            print("Error: There are not enough funds in the balance!")
+        elif amount <= 0:
+            print("Error: Enter the correct amount!")
+        else:
+            balance -= amount
+            print(f"${amount} out of balance. remaining balance: ${balance}")
+            
+    elif choice == "4":
+        print("Logging out!")
+        break;
+    
+    else:
+        print("Error: Wrong choice! Please enter the number between (1-4).")
