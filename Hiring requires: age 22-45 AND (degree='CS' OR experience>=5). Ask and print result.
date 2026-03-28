@@ -1,0 +1,10 @@
+age=int(input())
+degree=input()
+experience=int(input())
+if 22<=age<=45:
+    if degree=="CS"or experience>=5:
+            print("Hired")
+    else:
+        print("Not hired")
+else:
+    print("Not hired")
