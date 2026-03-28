@@ -1,0 +1,22 @@
+students = []
+
+for i in range(1, 6):
+    print(f"\n{i}-ci tələbə:")
+    name = input("Ad: ")
+    score = int(input("Bal (0-100): "))
+    if score >= 90: grade = "A"
+    elif score >= 80: grade = "B"
+    elif score >= 70: grade = "C"
+    elif score >= 60: grade = "D"
+    else: grade = "F"
+    
+    status = "Pass" if score >= 60 else "Fail"
+    
+    students.append([name, score, grade, status])
+print("\n" + "="*45)
+print(f"{'Ad':<15} | {'Bal':<5} | {'Qiymət':<7} | {'Status'}")
+print("-" * 45)
+for s in students:
+    print(f"{s[0]:<15} | {s[1]:<5} | {s[2]:<7} | {s[3]}")
+
+print("="*45)
