@@ -1,0 +1,8 @@
+score=int(input("Enter a score between 0-100:"))
+if 0<=score<=100:
+    if score>=60:
+        print("Pass")
+    else:
+        print("Fail")
+else:
+    print("It has to be between 0-100!")
